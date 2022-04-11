@@ -163,9 +163,19 @@ img.icon {
     <tr><td>Gitlab</td><td>Puppet</td><td>Jamf</td><td>Workspace One</td><td>zentral</td></tr>
     <tr><td>munki</td><td>autopkg</td><td>jenkins</td><td>flask</td><td>coffeescript</td></tr>
     <tr><td>cd4pe</td><td>isort</td><td>black</td><td>pdk</td><td>pylint</td>
+    <tr><td>santa</td><td>osquery</td>
   </table></span>
   <span class="green">
   <br>Alongside homemade middleware solutions/services and many more tools I'm forgetting to name.<br>
+  <br>I've built pipelines using Gitlab CI/CD to automate routine tasks, or to facilitate the
+  configuration of tools using source control. As an example, I built a pipeline that takes json
+  formatted lists of macos binaries/apps and their associated signatures to create allow/graylists in
+  zentral's implementation of Google's santa(on merge). I also implemented Git pre-commit hooks on the repo to
+  perform linting on the input json.<br>
+  <br>Similarly, I implemented a pipeline that allows us to schedule various python scripts as crons
+    using gitlab CI/CD to pass variables and secrets. Synching employee data across systems and 
+    the automation of locking devices based on CMDB data using Jamf are examples of some activities
+    that are run via this repo. Although the sky is the limit.<br>
   <br>My preferred code editor is Visual Studio Code. (and VIM when SSH'ing to remote servers)<br>
   <br>The strongest skill I possess is my willingness to dive into the deep end of an unknown topic and
   come out on the other side with an additional skill and a viable solution through 
@@ -304,6 +314,8 @@ img.icon {
         utilizing slack's python library.</span></li>
       <li><span class="green">Build and deploy custom configurations for compliance with CIS Controls on 
         macOS using Jamf, and Windows/Ubuntu using Puppet Enterprise.</span></li>
+      <li><span class="green">Pipeline to automatically build and sign iterations of TMT, alongside
+      shipping the required files to the appropriate S3 buckets. This process is currently manual.</li>
       <li><span class="green">Learn enough SwiftUI to convert the python TheMagicTool into a macOS 
         native app.</span></li>
     </ul> 
